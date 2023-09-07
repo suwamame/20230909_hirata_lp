@@ -86,7 +86,7 @@ body {
 
 /* ここからがニュースエリア */
 .news {
-    padding: 50px 0;
+    padding: 50px 100px;
 }
 
 .news__pickup{
@@ -112,7 +112,6 @@ body {
 }
 
 .news_list_item {
-    padding-left: 185px;
     padding: 1px 0;
     width: 750px;
     border-bottom: 1px solid #E6E6E6;
