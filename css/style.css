@@ -40,23 +40,37 @@ body {
 
 /* ここからがrelative */
 .relative {
-    position: relative;
+    padding: 10px ;
+    display: flex;
+        justify-content: space-around;
+    
 }
 
 .relative__img {
+    position: relative;
     margin: 0 0 0 auto;
-    display: block;
     width:60%;
+    z-index: 5;
+    
 }
 
-.absolute {
+.relative__img img{
+    width: 100%;
+}
+
+.absolute{
     position: absolute;
-    top: 30px;
-    left: 15%;
-    font-size: 60px;
+    left: 250px;
+    z-index: 10;
+ 
+
+}
+.absolute-ttl{
+    font-size: 50px;
     line-height: 100px;
     font-family: 'Gloria Hallelujah', cursive;
     color: rgb(181, 6, 99);
+    display: inline-block;
 }
 
 .absolute-emphasis{
@@ -64,23 +78,22 @@ body {
 }
 
 .absolute-content{
-    position: absolute;
-    top: 53%;
-    left: 15%;
     font-size: 27px;
     font-weight: bold;
     color: rgb(181, 6, 99);
 }
 
 .absolute-content-item{
-    position: absolute;
-        top: 62%;
-        left: 15%;
         font-size: 20px;
         color: #7d7e82;
         line-height: 30px;
 }
-
+@media screen and (min-width: 1000px) {
+    .absolute {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
 
 
 /* ここからがニュースエリア */
@@ -109,8 +122,6 @@ body {
 
 .news_list {
     margin: 0 5%;
-    
-    
 }
 
 .news_list_item {
@@ -154,8 +165,9 @@ body {
 /* ここからがabout */
 .about {
     background-color: #ebebeb;
-    padding: 60px 0;
-    margin-top: 150px;
+    padding: 40px 0;
+    margin: 0 auto;
+    
     
 }
 
@@ -182,8 +194,8 @@ body {
 
 .about__img {
     margin: 0 0 0 auto;
-    padding-right: 50px;
     width: 40%;
+    display: block;
 }
 
 .about__img img {
@@ -192,9 +204,12 @@ body {
 
 
 .about__content-description {
-    margin-left: 100px;
+   display: block;
+    margin:40px auto;
+    color: #606062;
     line-height: 30px;
-    color: #7d7e82;
+    font-size: 18px;
+   
 }
 
 /* ここからがsarvice */
@@ -227,7 +242,7 @@ body {
     grid-template-rows: 200px 200px;
     grid-template-columns: 2fr 2fr  2fr 2fr 1fr; 
     width: 900px;
-    margin-left: 200px;
+    margin: 0 auto;
     line-height: 20px;
     color:aliceblue;
 }
