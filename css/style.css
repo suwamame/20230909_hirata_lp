@@ -85,11 +85,13 @@ body {
 
 /* ここからがニュースエリア */
 .news {
-    padding: 50px 100px;
+    padding: 50px ;
+    text-align: center;
+    
 }
 
 .news__pickup{
-    margin-left: 185px;
+    margin-left: -350px;
 }
 
 .news__pickup-ttl{
@@ -107,6 +109,8 @@ body {
 
 .news_list {
     margin: 0 5%;
+    
+    
 }
 
 .news_list_item {
