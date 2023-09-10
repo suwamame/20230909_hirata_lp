@@ -47,7 +47,7 @@ body {
 }
 
 .relative__img {
-    position: relative;
+    position:relative;
     margin: 0 0 0 auto;
     width:60%;
     z-index: 5;
@@ -60,14 +60,14 @@ body {
 
 .absolute{
     position: absolute;
-    left: 250px;
+    left: 15%;
     z-index: 10;
  
 
 }
 .absolute-ttl{
-    font-size: 50px;
-    line-height: 100px;
+    font-size: 45px;
+    line-height: 60px;
     font-family: 'Gloria Hallelujah', cursive;
     color: rgb(181, 6, 99);
     display: inline-block;
@@ -78,23 +78,17 @@ body {
 }
 
 .absolute-content{
-    font-size: 27px;
+    padding: -10px 0;
+    font-size: 25px;
     font-weight: bold;
     color: rgb(181, 6, 99);
 }
 
 .absolute-content-item{
-        font-size: 20px;
+        font-size: 18px;
         color: #7d7e82;
-        line-height: 30px;
+        line-height: 18px;
 }
-@media screen and (min-width: 1000px) {
-    .absolute {
-        width: 100%;
-        margin-bottom: 0;
-    }
-}
-
 
 /* ここからがニュースエリア */
 .news {
