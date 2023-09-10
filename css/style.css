@@ -1,7 +1,15 @@
 
-body {
+html,body {
     line-height: 1;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
+
+
+
+
 /* ここからがナビ */
 .header {
     display: flex;
@@ -36,6 +44,12 @@ body {
     text-decoration: none;
     color: #7d7e82;
     max-width: 100%;
+}
+
+.main{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* ここからがrelative */
@@ -120,7 +134,6 @@ body {
 
 .news_list_item {
     padding: 1px 0;
-    width: 750px;
     border-bottom: 1px solid #E6E6E6;
     list-style: none;  
     display: inline-block;
@@ -150,9 +163,10 @@ body {
 .news_item {
     background: rgb(181, 6, 99);
     color: #fff;
-    border-radius: 14px;
+    border-radius: 15px;
     width: 6em;
     text-align: center;
+    padding: 5px;
     margin-left: 25px;
 }
 
@@ -210,6 +224,7 @@ body {
 
 .sarvice{
     padding: 50px 0;
+    
 }
 
 .sarvice-pickup{
@@ -234,15 +249,15 @@ body {
 .grid__parent {
     display: grid;
     grid-template-rows: 200px 200px;
-    grid-template-columns: 2fr 2fr  2fr 2fr 1fr; 
-    width: 900px;
+    grid-template-columns: 2fr   2fr ; 
+    width: 80%;
     margin: 0 auto;
-    line-height: 20px;
+    line-height: 15px;
     color:aliceblue;
 }
 
 .box1 {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1/3;
     background: #af3f73;
     text-align: center;
@@ -255,7 +270,7 @@ body {
 }
 
 .box2 {
-    grid-column: 3/9;
+    grid-column: 2/4;
     grid-row: 1/2;
     background: #a65088;
     display: flex;
@@ -268,7 +283,7 @@ body {
 }
 
 .box3 {
-    grid-column: 3/9;
+    grid-column: 2/4;
     grid-row: 2/3;
     background: #ac92a9;
     display: flex;
@@ -288,9 +303,9 @@ body {
 /* ここからがwrapper */
 
 .wrapper {
-    padding: 30px 0;
-    margin-top: 50px;
+    padding: 30px ;
     background-color: #ebebeb;
+    margin: 50px 0px 0px;   
     
 }
 
@@ -311,18 +326,20 @@ body {
 }
 
 .card {
+    width: 30%;
     display: flex;
-    justify-content: space-around;  
-    padding: 0px 80px 10px; 
-    margin-left: 130px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .text-box {
     border-radius: 20px ;
     background-color: #fff;
-    margin-right: 50px;
+    margin-right:40px;
     cursor: pointer;
     border: 1px solid #e9eaea;
+    width: 100%;
+    
 }
 
 .content-img img{
@@ -350,37 +367,44 @@ body {
 
 .text__content {
     text-align: center;
-    padding: 15px 15px;
-    color: #606062;
+    padding: 14px 10px;
+    color: #606062;   
     
 }
 
 .text__content-title {
     padding-top: 5px;
-    font-size: 18px;
-    
+    font-size: 15px;
+    width: 100%;
 }
 
 .flex__item{
     display: flex;
-        align-items: baseline;
-        list-style: none;
-        padding: 30px 10px 0px;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 2px;
+    font-size: 12px;
+}
+
+.blog-wrap__item-content-tag{
+    margin: 10px;
 }
 
 .blog-wrap__item-content-tag:not(:last-of-type){
-    margin-right: 50px;
+    margin-right: 30px;
+    
 }
 
 .more__btn{
     width: 200px;
-        padding: 15px 0;
+        padding: 20px 0;
         color: rgb(181, 6, 99);
         border: solid 2px rgb(181, 6, 99);
         border-radius: 30px;
+        font-weight: bold;
         background-color: #fff;
         text-align: center;
-        margin: 10px auto ;
+        margin: 30px auto ;
         display: block;
         text-decoration: none;
 }
@@ -503,6 +527,7 @@ body {
     padding: 20px 0;
     background-color: #ebebeb;
     text-align: center;
+        
 }
 
 .copy-right{
