@@ -54,7 +54,6 @@ html,body {
 
 /* ここからがrelative */
 .relative {
-    padding: 10px ;
     display: flex;
         justify-content: space-around;
     
